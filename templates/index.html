@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Classifier une image </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prédicteur d'image CIFAR-10</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Prédire</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                Prédiction : <strong>{{ prediction }}</strong>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
