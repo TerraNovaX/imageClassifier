@@ -1,0 +1,6 @@
+data/
+model/
+.env
+__pycache__/
+*.pyc
+env/
