@@ -1,6 +1,9 @@
+__pycache__
+*.pyc
+.git
 data/
 model/
-.env
-__pycache__/
-*.pyc
+uploads/
+*.pkl
+*.tar.gz
 env/
